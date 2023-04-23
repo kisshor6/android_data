@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">News Application</string>
+    <string name="headline">Enter the headline</string>
+    <string name="description"> Enter the description</string>
+    <string name="picture">choose</string>
+    <string name="top">Add New News Item</string>
+    <string name="update">Update News Item</string>
+    <string name="select">No File Chosen</string>
+
+    <string-array name="options">
+        <item>select your category</item>
+        <item>Entertainment</item>
+        <item>sports</item>
+        <item>Cinema</item>
+        <item>Business</item>
+        <item>Agriculture</item>
+        <item>Food</item>
+        <item>Health</item>
+
+
+    </string-array>
+</resources>

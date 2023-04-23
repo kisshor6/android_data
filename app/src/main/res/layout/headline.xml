@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/cardColor"
+    android:elevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/contentImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/contentImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contentHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:text="@string/app_name"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/contentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:maxLines="3"
+                android:textColor="#93FFFFFF"
+                android:ellipsize="end"
+                android:fontFamily="@font/baloo_paaji_2_semibold"
+                android:text="@string/app_name"/>
+
+
+                <TextView
+                    android:id="@+id/contentCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:ellipsize="end"
+                    android:textColor="#CDCCCC"
+                    android:fontFamily="@font/actor"
+                    android:letterSpacing="0.1"
+                    android:maxLines="3"
+                    android:text="@string/app_name"
+                    android:textAlignment="textEnd"
+                    android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

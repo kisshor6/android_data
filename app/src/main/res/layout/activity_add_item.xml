@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".addItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:text="@string/top"
+            android:fontFamily="@font/baloo_paaji_2_bold"/>
+
+
+        <EditText
+            android:id="@+id/headLine"
+            style="@style/editStyle"
+            android:hint="@string/headline" />
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/editStyle"
+            android:hint="@string/description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/selectPicture"
+                style="@style/selectButton"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="@string/picture" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:maxLength="28"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:fontFamily="@font/baloo_paaji_2_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/picture"
+                android:background="@drawable/background_spinner"
+                android:text="@string/select" />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:fontFamily="@font/baloo_paaji_2_semibold"
+            android:layout_margin="10dp"
+            android:tooltipText="@string/app_name"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/background_spinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/top"
+            android:fontFamily="@font/baloo_paaji_2_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:id="@+id/addNewsItem"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
